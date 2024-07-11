@@ -6,9 +6,16 @@ cd MT7921-Bluetooth-fix
 make
 ```
 
-# Add module
+# Temporarily add the module
 
 ```sh
 sudo rmmod btusb.ko
 sudo insmod btusb.ko
+```
+
+# Permanent Fix
+
+```sh
+xz -v btusb.ko
+sudo cp btusb.ko.xz /lib/modules/6.9.7-200.fc40.x86_64/kernel/drivers/bluetooth/
 ```
