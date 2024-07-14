@@ -17,5 +17,5 @@ sudo insmod btusb.ko
 
 ```sh
 xz -v btusb.ko
-sudo cp btusb.ko.xz /lib/modules/6.9.7-200.fc40.x86_64/kernel/drivers/bluetooth/
+sudo cp btusb.ko.xz /lib/modules/6.9.8-200.fc40.x86_64/kernel/drivers/bluetooth/
 ```
